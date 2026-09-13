@@ -3,7 +3,6 @@ layout: home
 
 hero:
   name: Phira-Vrenxz
-  text: "社区驱动的节奏游戏"
   tagline: "Phira 的分支，基于 Rust 开发，玩法受 Phigros 启发。"
   image:
     src: /logo.png

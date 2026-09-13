@@ -3,7 +3,6 @@ layout: home
 
 hero:
   name: Phira-Vrenxz
-  text: "A community-driven rhythm game"
   tagline: "A fork of Phira, written in Rust, inspired by Phigros."
   image:
     src: /logo.png

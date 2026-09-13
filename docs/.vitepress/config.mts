@@ -42,7 +42,7 @@ const navEn = [
 export default defineConfig({
   base: BASE,
   title: 'Phira-Vrenxz',
-  description: 'Phira-Vrenxz（PhirLie）是一个社区驱动的节奏游戏，基于 Rust，是 Phira 的分支、玩法受 Phigros 启发。提供 Windows / Android 下载、多人联机服务器与谱面标准文档。',
+  description: 'Phira-Vrenxz（PhirLie）是 Phira 的分支，基于 Rust 开发，玩法受 Phigros 启发。提供 Windows / Android 下载、多人联机服务器与谱面标准文档。',
   lang: 'zh-CN',
   // 文档是移植过来的，里面难免有指向上游旧文件的死链：构建时不因此失败，
   // 改完再单独跑链接检查（见 README）。
@@ -52,7 +52,7 @@ export default defineConfig({
     ['link', { rel: 'apple-touch-icon', href: BASE + 'logo.png' }],
     ['meta', { name: 'theme-color', content: '#4c84ff' }],
     ['meta', { property: 'og:title', content: 'Phira-Vrenxz' }],
-    ['meta', { property: 'og:description', content: '社区驱动的节奏游戏，基于 Rust，Phira 的分支。' }],
+    ['meta', { property: 'og:description', content: 'Phira 的分支，基于 Rust 开发，玩法受 Phigros 启发。' }],
     ['meta', { property: 'og:image', content: BASE + 'logo.png' }],
   ],
   themeConfig: {
@@ -86,7 +86,7 @@ export default defineConfig({
         REPO.replace('https://', '') +
         '</a>' +
         ' · 文档来自 <a href="https://github.com/TeamFlos/phira-docs" target="_blank" rel="noopener">TeamFlos/phira-docs</a>（CC BY 4.0）',
-      copyright: '社区驱动的节奏游戏 · 致谢 Phira 与 prpr 引擎',
+      copyright: 'Phira-Vrenxz · 致谢 Phira 与 prpr 引擎',
     },
     nav: navZh,
     sidebar: sidebarZh,
@@ -125,7 +125,7 @@ export default defineConfig({
             REPO.replace('https://', '') +
             '</a>' +
             ' · Docs based on <a href="https://github.com/TeamFlos/phira-docs" target="_blank" rel="noopener">TeamFlos/phira-docs</a> (CC BY 4.0)',
-          copyright: 'A community-driven rhythm game · Thanks to Phira and the prpr engine',
+          copyright: 'Phira-Vrenxz · Thanks to Phira and the prpr engine',
         },
       },
     },
