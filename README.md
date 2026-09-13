@@ -106,6 +106,6 @@ npm run preview    :: 再（重新）起预览；如果预览已经在跑，先 
 | 线上地址 | <https://luterenxaer.github.io/phiravrenxz/> |
 | 发布方式 | 推送到 `main` 自动构建并部署（`.github/workflows/deploy.yml`，走 GitHub Pages 的 GitHub Actions 发布源） |
 
-- 站点挂在**子路径** `/phiravrenxz/` 下，所以 `docs/.vitepress/config.mts` 里有 `base: '/PVweb/'`；以后若绑到自己的域名（根路径），把 `BASE` 改成 `'/'` 再重新构建即可。
+- 站点挂在**子路径** `/phiravrenxz/` 下，所以 `docs/.vitepress/config.mts` 里有 `base: '/phiravrenxz/'`；以后若绑到自己的域名（根路径），把 `BASE` 改成 `'/'` 再重新构建即可。
 - 本地预览跟着 base 走：`npm run preview` 后访问 <http://localhost:4173/phiravrenxz/>。
 - 改完文档：`git add -A && git commit -m "..." && git push`，剩下的交给 Actions（约 1 分钟）。
