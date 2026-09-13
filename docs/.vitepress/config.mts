@@ -4,9 +4,9 @@ import { sidebarZh, sidebarEn } from './sidebars'
 const REPO = 'https://github.com/LuteRenxaer/Phira-Vrenxz'
 const RELEASES = REPO + '/releases'
 
-// GitHub Pages 项目站的地址是 https://<用户>.github.io/PVweb/，所以要带这个 base。
+// GitHub Pages 项目站的地址是 https://<用户>.github.io/phiravrenxz/，所以要带这个 base。
 // 绑到自己的域名（根路径）或本地预览时不想要它的话，把它改成 '/' 再重新构建即可。
-const BASE = '/PVweb/'
+const BASE = '/phiravrenxz/'
 
 const navZh = [
   { text: '首页', link: '/' },
