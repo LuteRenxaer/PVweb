@@ -97,3 +97,15 @@ npm run preview    :: 再（重新）起预览；如果预览已经在跑，先 
 - 实现：`docs/.vitepress/theme/page-transition.ts`（用 VitePress 的 `onBeforeRouteChange` / `onAfterRouteChange` 钩子，注意**不是** vue-router 的 `beforeEach`），样式在 `theme/custom.css` 末尾；
 - 只变 hash 的同页锚点、以及系统开了「减少动效」时不播放；
 - 想调节奏就改 `page-transition.ts` 里的 `LEAVE_MS` / `ENTER_MS`，想换效果改 `custom.css` 里的 `@keyframes pv-page-in`。
+
+## 部署（已配好）
+
+| | |
+| --- | --- |
+| 仓库 | <https://github.com/LuteRenxaer/PVweb> |
+| 线上地址 | <https://luterenxaer.github.io/PVweb/> |
+| 发布方式 | 推送到 `main` 自动构建并部署（`.github/workflows/deploy.yml`，走 GitHub Pages 的 GitHub Actions 发布源） |
+
+- 站点挂在**子路径** `/PVweb/` 下，所以 `docs/.vitepress/config.mts` 里有 `base: '/PVweb/'`；以后若绑到自己的域名（根路径），把 `BASE` 改成 `'/'` 再重新构建即可。
+- 本地预览跟着 base 走：`npm run preview` 后访问 <http://localhost:4173/PVweb/>。
+- 改完文档：`git add -A && git commit -m "..." && git push`，剩下的交给 Actions（约 1 分钟）。
